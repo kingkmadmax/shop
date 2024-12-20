@@ -96,7 +96,7 @@ class _LoginState extends State<Login> {
                       border: InputBorder.none, hintText: "password"),
                 )),
             Text(
-              "Forgat paswor",
+              "Forgat paswor2212312",
               style: TextStyle(color: Colors.blue, fontSize: 3),
             )
           ],
