@@ -66,7 +66,7 @@ class _LoginState extends State<Login> {
                 margin: EdgeInsets.only(left: 20, right: 20),
                 padding: EdgeInsets.only(left: 20),
                 decoration: BoxDecoration(
-                    color: Color(0xFFF4F5F8),
+                    color: Color.fromARGB(255, 114, 126, 161),
                     borderRadius: BorderRadius.circular(20)),
                 child: TextField(
                   decoration: InputDecoration(
@@ -89,16 +89,31 @@ class _LoginState extends State<Login> {
                 margin: EdgeInsets.only(left: 20, right: 20),
                 padding: EdgeInsets.only(left: 30),
                 decoration: BoxDecoration(
-                    color: Color(0xFFF4F5F8),
+                    color: Color.fromARGB(255, 114, 126, 161),
                     borderRadius: BorderRadius.circular(20)),
                 child: TextField(
                   decoration: InputDecoration(
                       border: InputBorder.none, hintText: "password"),
                 )),
-            Text(
-              "Forgat paswor2212312",
-              style: TextStyle(color: Colors.blue, fontSize: 3),
-            )
+            SizedBox(
+              height: 7,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  "Forgat pasword  ",
+                  style: TextStyle(color: Colors.blue, fontSize: 15),
+                ),
+              ],
+            ),
+            Container(
+                width: 5,
+                height: 30,
+                decoration: BoxDecoration(
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(20),
+                ))
           ],
         ),
       ),
