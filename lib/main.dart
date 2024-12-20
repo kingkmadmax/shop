@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shop/pagees/Sing_up.dart';
+import 'package:shop/pagees/login.dart';
 // import 'package:shop/pagees/bootomenav.dart';
 // import 'package:shop/pagees/home.dart';
-import 'package:shop/pagees/login.dart';
+// import 'package:shop/pagees/login.dart';
 // import 'package:shop/pagees/product_file.dart';
 // import 'pagees/Landing.dart';
 

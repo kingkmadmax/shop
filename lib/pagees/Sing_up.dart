@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shop/support_widgets.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class SingUp extends StatefulWidget {
+  const SingUp({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<SingUp> createState() => _SingUpState();
 }
 
-class _LoginState extends State<Login> {
+class _SingUpState extends State<SingUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,7 @@ class _LoginState extends State<Login> {
               ),
               Center(
                 child: Text(
-                  "Sign in",
+                  "Sign Up",
                   style: Appwidget.FeildStyle(),
                 ),
               ),
@@ -50,6 +50,29 @@ class _LoginState extends State<Login> {
                   style: Appwidget.lightstyle(),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 15),
+                child: Text(
+                  "Name",
+                  style: Appwidget.h3(),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 20, right: 20),
+                  padding: EdgeInsets.only(left: 20),
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 114, 126, 161),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none, hintText: "User name"),
+                  )),
               SizedBox(
                 height: 20,
               ),
@@ -122,7 +145,7 @@ class _LoginState extends State<Login> {
                   ),
                   child: Center(
                     child: Text(
-                      "Login in",
+                      "Sing up",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   ),
@@ -132,15 +155,15 @@ class _LoginState extends State<Login> {
                 height: 10,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "dont have an accont?  ",
-                    style: TextStyle(fontSize: 15),
+                    style: TextStyle(fontSize: 18),
                   ),
                   Text(
                     "Sine up",
-                    style: TextStyle(color: Colors.blue, fontSize: 15),
+                    style: TextStyle(color: Colors.blue, fontSize: 20),
                   )
                 ],
               ),
