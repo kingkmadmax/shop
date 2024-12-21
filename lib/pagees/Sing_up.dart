@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop/pagees/login.dart';
 import 'package:shop/support_widgets.dart';
 
 class SingUp extends StatefulWidget {
@@ -122,15 +123,6 @@ class _SingUpState extends State<SingUp> {
               SizedBox(
                 height: 7,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    "Forgat pasword  ",
-                    style: TextStyle(color: Colors.blue, fontSize: 15),
-                  ),
-                ],
-              ),
               SizedBox(
                 height: 20,
               ),
@@ -161,9 +153,19 @@ class _SingUpState extends State<SingUp> {
                     "dont have an accont?  ",
                     style: TextStyle(fontSize: 18),
                   ),
-                  Text(
-                    "Sine up",
-                    style: TextStyle(color: Colors.blue, fontSize: 20),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Login(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "Log in",
+                      style: TextStyle(color: Colors.blue, fontSize: 20),
+                    ),
                   )
                 ],
               ),

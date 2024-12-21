@@ -1,3 +1,4 @@
+PRODUCT_BUNDLE_IDENTIFIER
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
